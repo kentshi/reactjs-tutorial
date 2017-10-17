@@ -35,7 +35,8 @@ class Foo extends React.Component {
                     name={"Max"}
                     initialAge={27}
                     greet={this.onGreet}
-                    changeLink={this.onChangeLinkName.bind(this)}
+                    changeLink={(param) => this.onChangeLinkName(param)}
+                    initialLinkName={this.state.homeLink}
                 />
             </div>
         </div>
